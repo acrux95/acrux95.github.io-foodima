@@ -2,101 +2,150 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/ejercicio-pug.css"/>
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&amp;display=swap"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <header>
-      <h1>Foodima</h1>
+    <header class="header--main">
+      <div class="nav--title">
+        <h1>Foodima</h1>
+      </div>
       <nav class="nav--header">
         <ul>
           <li><a href="#">Shop</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Recipes</a></li>
           <li><a href="#">Hotline</a></li>
+          <li><a class="header__busqueda" href="#"><i class="fas fa-search"></i></a></li>
         </ul>
-      </nav><a class="header__busqueda" href="#"><i class="fas fa-search"></i><span>Search</span></a>
+      </nav>
+      <div class="nav--log--bar"><a class="log--bar__number" href="">0</a><a class="log--bar__login" href="">login</a>
+        <button><a class="log--bar__button" href="">Sign Up</a></button>
+      </div>
     </header>
     <section class="intro">
-      <div class="intro__imagen"><img src="images/image0.jpg" alt=""/></div>
       <div class="intro__contenido">
         <h2>Recipe Contest</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur 
-          adipisicing elit. Modi quia fugiat reiciendis
-          animi corporis dolorum, voluptatum voluptas!
-          Provident molestiae ullam ipsam eius vitae,
-          minima facere rem distinctio, id, quos non!<span>
-            Provident molestiae ullam ipsam eius vitae,minima facere rem distinctio, id, quos non!</span>
-        </p><a class="Boton">How they work</a>
+          Recipe contests are like our big 
+          constantly-in-progress dinner
+          party-and you"re invited<a> How they work</a>
+        </p>
       </div>
     </section>
-    <div class="sidebar--listado">
+    <div class="sidebar--list">
       <h3>Recipes</h3>
-      <h2>Filter by:</h2>
-      <ul>
-        <li><a href="#"><span class="sidebar--listado__numero">1</span><span class="sidebar--listado__titulo">Contest Winners</span></a></li>
-        <li><a href="#"><span class="sidebar--listado__numero">2</span><span class="sidebar--listado__titulo">Featured</span></a></li>
-        <li><a href="#"><span class="sidebar--listado__numero">3</span><span class="sidebar--listado__titulo">Test kitchen-Approved</span></a></li>
+      <h4>Filter by:</h4>
+      <p>Clear filter</p>
+      <ul class="sidebar--filter">
+        <li>
+          <label for="option1">Contest Winners </label>
+        </li>
+        <li>
+          <label for="option2">Featured </label>
+        </li>
+        <li>
+          <label for="option3">Test kitchen-Approved </label>
+        </li>
+      </ul>
+      <ul class="sidebar--filter__input">
+        <li>
+          <input type="checkbox" name="filter1"/>
+        </li>
+        <li>
+          <input type="checkbox" name="filter3"/>
+        </li>
+        <li>
+          <input type="checkbox" name="filter2"/>
+        </li>
+      </ul>
+      <ul class="sidebar--menu">
+        <li><a href="">Meal</a></li>
+        <li><a href="">Dish Type</a></li>
+      </ul>
+      <ul class="sidebar--menu__input">
+        <li><a href="">+</a></li>
+        <li><a href="">+</a></li>
       </ul>
     </div>
     <div class="buscador">
       <form>
-        <input class="buscador__input" type="text" placeholder=""/>
+        <input class="buscador__input" type="text" placeholder="search recopes and more"/>
       </form>
+    </div>
+    <div class="button--group">
+      <button class="btn btn__default btn__dropdown" data-toggle="dropdown"> Sort by
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="">Newest</a></li>
+          <li><a href="">Best values</a></li>
+          <li><a href="">Favorites</a></li>
+        </ul>
+      </button>
     </div>
     <main class="contenido">
       <div class="caja">
         <div class="caja__imagen"><img src="images/image1.jpg" alt=""/></div>
         <div class="caja__contenido">
-          <h3>Subtitulo 1</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur</p>
+          <h4>Subtitulo 1</h4>
+          <p>Raspberry-Raspberry Shortcakes</p>
         </div>
       </div>
       <div class="caja">
         <div class="caja__imagen"><img src="images/image2.jpg" alt=""/></div>
         <div class="caja__contenido">
-          <h3>Subtitulo 2</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur</p>
+          <h4>Subtitulo 2</h4>
+          <p>David lebovitz's Cherry Clafoutis</p>
         </div>
       </div>
       <div class="caja">
         <div class="caja__imagen"><img src="images/image3.jpg" alt=""/></div>
         <div class="caja__contenido">
-          <h3>Subtitulo 3</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur</p>
+          <h4>Subtitulo 3</h4>
+          <p>Chicharrones-Encrusted Avocado</p>
         </div>
       </div>
       <div class="caja">
         <div class="caja__imagen"><img src="images/image4.jpg" alt=""/></div>
         <div class="caja__contenido">
-          <h3>Subtitulo 1</h3>
+          <h4>Subtitulo 4</h4>
           <p>Lorem ipsum, dolor sit amet consectetur</p>
         </div>
       </div>
       <div class="caja">
         <div class="caja__imagen"><img src="images/image5.jpg" alt=""/></div>
         <div class="caja__contenido">
-          <h3>Subtitulo 2</h3>
+          <h4>Subtitulo 1</h4>
           <p>Lorem ipsum, dolor sit amet consectetur</p>
         </div>
       </div>
       <div class="caja">
         <div class="caja__imagen"><img src="images/image6.jpg" alt=""/></div>
         <div class="caja__contenido">
-          <h3>Subtitulo 3</h3>
+          <h4>Subtitulo 1</h4>
           <p>Lorem ipsum, dolor sit amet consectetur</p>
         </div>
       </div>
     </main>
     <footer>
       <h1>Foodima</h1>
-      <ul>
-        <li>Acerca</li>
-        <li>Noticias</li>
-        <li>Contacto</li>
-      </ul>
+      <nav class="nav--footer">
+        <ul>
+          <li>About</li>
+          <li>News</li>
+          <li>Contact</li>
+          <div class="nav--social">
+            <ul></ul>
+          </div>
+          <li>Follow us</li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

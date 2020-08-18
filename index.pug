@@ -1,33 +1,46 @@
 extend componentes/plantilla.pug
 block contenidos
         section.intro
-            .intro__imagen: img(src="images/image0.jpg", alt="")
             .intro__contenido
-                h2 #{titulos[0]}
+                h2 #{titles[0]}
                 p
-                    | Lorem ipsum, dolor sit amet consectetur 
-                    | adipisicing elit. Modi quia fugiat reiciendis
-                    | animi corporis dolorum, voluptatum voluptas!
-                    | Provident molestiae ullam ipsam eius vitae,
-                    | minima facere rem distinctio, id, quos non!
-                    span Provident molestiae ullam ipsam eius vitae,
-                        | minima facere rem distinctio, id, quos non!
-                a.Boton How they work
-        //- ul
-        //-     each titulo in titulos
-        //-         li=titulo
-        .sidebar--listado
+                    | Recipe contests are like our big 
+                    | constantly-in-progress dinner
+                    | party-and you"re invited
+                    a  How they work
+        .sidebar--list
             h3 Recipes
-            h2 Filter by:
-            ul
-                +listado-categoria('1','Contest Winners')
-                +listado-categoria('2','Featured')
-                +listado-categoria('3','Test kitchen-Approved')
-        .buscador: form: input(type="text" placeholder="" class="buscador__input")
+            h4 Filter by:
+            p Clear filter
+            ul.sidebar--filter
+                li: label(for="option1") Contest Winners 
+                li: label(for="option2") Featured 
+                li: label(for="option3") Test kitchen-Approved 
+            ul.sidebar--filter__input
+                li: input(type="checkbox" name="filter1")
+                li: input(type="checkbox" name="filter3")
+                li: input(type="checkbox" name="filter2")
+            ul.sidebar--menu
+                li: a(href="") Meal
+                li: a(href="") Dish Type
+            ul.sidebar--menu__input
+                li: a(href="") +
+                li: a(href="") +
+
+        .buscador: form: input(type="text" placeholder="search recopes and more" class="buscador__input")
+        .button--group
+         button.btn.btn__default.btn__dropdown(data-toggle="dropdown")  Sort by
+            ul.dropdown-menu(role="menu")
+                li: a(href="") Newest
+                li: a(href="") Best values
+                li: a(href="") Favorites
+
+
+        //- a.Boton(type="button" data-toggle="dropdown") Sort by Newest
         main.contenido
-            +caja('image1.jpg',titulos[1],'Lorem ipsum, dolor sit amet consectetur')
-            +caja('image2.jpg',titulos[2],'Lorem ipsum, dolor sit amet consectetur')
-            +caja('image3.jpg',titulos[3],'Lorem ipsum, dolor sit amet consectetur')
-            +caja('image4.jpg',titulos[1],'Lorem ipsum, dolor sit amet consectetur')
-            +caja('image5.jpg',titulos[2],'Lorem ipsum, dolor sit amet consectetur')
-            +caja('image6.jpg',titulos[3],'Lorem ipsum, dolor sit amet consectetur')
+            +caja("image1.jpg",titles[1],"Raspberry-Raspberry Shortcakes")
+            +caja("image2.jpg",titles[2],"David lebovitz's Cherry Clafoutis")
+            +caja("image3.jpg",titles[3],"Chicharrones-Encrusted Avocado")
+            +caja("image4.jpg",titles[4],"Lorem ipsum, dolor sit amet consectetur")
+            +caja("image5.jpg",titles[5],"Lorem ipsum, dolor sit amet consectetur")
+            +caja("image6.jpg",titles[6],"Lorem ipsum, dolor sit amet consectetur")

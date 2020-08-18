@@ -4,18 +4,18 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "88A30D45-5BC1-4C25-936C-0F7643FA5F9D"
+		"uuidString": "C2BEB304-E993-4302-AD64-BB32BFFEC58E"
 		}
 	],
 "creatorBuild": "32186",
 "files": {
-	"/.vscode/settings.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/.vscode/settings-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
+	"/componentes/config.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/componentes/config.html",
+		"oF": 0
 		},
 	"/componentes/configuraciones.html": {
 		"cB": 0,
@@ -24,16 +24,6 @@
 		"oA": 0,
 		"oAP": "/componentes/configuraciones.html",
 		"oF": 0
-		},
-	"/componentes/configuraciones.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/componentes/configuraciones.html",
-		"oF": 0,
-		"oS": 0
 		},
 	"/componentes/footer.html": {
 		"cB": 0,
@@ -89,6 +79,24 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/componentes/mixins.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/componentes/mixins.html",
+		"oF": 0
+		},
+	"/componentes/mixins.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/componentes/mixins.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/componentes/plantilla.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -104,6 +112,16 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/componentes/plantilla.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/componentes/vars.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/componentes/vars.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -135,6 +153,138 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/images/background.jpg": {
+		"ft": 16384,
+		"iS": 141983,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/background.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image0.jpg": {
+		"ft": 16384,
+		"iS": 5048626,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image0.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image1.jpg": {
+		"ft": 16384,
+		"iS": 299511,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image10.jpg": {
+		"ft": 16384,
+		"iS": 159672,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image2.jpg": {
+		"ft": 16384,
+		"iS": 280229,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image3.jpg": {
+		"ft": 16384,
+		"iS": 127909,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image4.jpg": {
+		"ft": 16384,
+		"iS": 96024,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image5.jpg": {
+		"ft": 16384,
+		"iS": 55482,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image6.jpg": {
+		"ft": 16384,
+		"iS": 77159,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image7.jpg": {
+		"ft": 16384,
+		"iS": 431715,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image8.jpg": {
+		"ft": 16384,
+		"iS": 99907,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/image9.jpg": {
+		"ft": 16384,
+		"iS": 256904,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/image9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/imagen.png": {
 		"ft": 32768,
 		"iS": 6381,
@@ -146,21 +296,32 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/landing.html": {
+	"/images/lupa.png": {
+		"ft": 32768,
+		"iS": 35869,
+		"oA": 0,
+		"oAP": "/images/lupa.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/landing.html",
+		"oAP": "/index.html",
 		"oF": 0
 		},
-	"/landing.pug": {
+	"/index.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/landing.html",
+		"oAP": "/index.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -171,6 +332,29 @@
 		"oA": 0,
 		"oAP": "/prepros.config",
 		"oF": 0
+		},
+	"/scss/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/scss/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/scss/main.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/scss/main.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
 		}
 	},
 "hooks": [
@@ -178,8 +362,8 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 618258721.36000204,
-	"displayValue": "platzi-games",
+	"creationDate": 619248898.53484297,
+	"displayValue": "foodima",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_magenta",
 	"iconImageWasSetByUser": 0

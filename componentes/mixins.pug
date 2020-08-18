@@ -1,4 +1,12 @@
-mixin listado-categoria(numero,titulo)
+mixin category-list(number,title)
 	li: a(href="#")
-		span.sidebar--listado__numero=numero
-		span.sidebar--listado__titulo=titulo
+		span.sidebar--list__number=number
+		span.sidebar--list__title=title
+
+mixin caja(imagen,title,contenido)
+	.caja
+		.caja__imagen: img(src="images/"+imagen, alt="")
+		.caja__contenido
+			h4=title
+			p=contenido
+			

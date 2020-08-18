@@ -1,5 +1,12 @@
 footer
+    
     h1 Foodima
-    ul
-        each enlace in enlaces
-            li=enlace
+    nav.nav--footer: ul
+        each option in options
+            li=option
+        .nav--social: ul
+        li Follow us
+        li: a(href="#"): i.fab.fa-instagram
+        li: a(href="#"): i.fab.fa-pinterest
+        li: a(href="#"): i.fab.fa-twitter
+        li: a(href="#"): i.fab.fa-facebook-f
