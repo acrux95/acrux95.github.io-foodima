@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "compile-hero.jade-output-directory": "./",
+    "compile-hero.javascript-output-directory": "./script/",
+    "compile-hero.less-output-directory": "./css/",
+    "compile-hero.pug-output-directory": "./",
+    "compile-hero.sass-output-directory": "./css/",
+    "compile-hero.scss-output-directory": "./css/"
 }

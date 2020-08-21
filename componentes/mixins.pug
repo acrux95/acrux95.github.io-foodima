@@ -3,10 +3,10 @@ mixin category-list(number,title)
 		span.sidebar--list__number=number
 		span.sidebar--list__title=title
 
-mixin caja(imagen,title,contenido)
-	.caja
-		.caja__imagen: img(src="images/"+imagen, alt="")
-		.caja__contenido
+mixin box(imagen,title,contenido)
+	.box
+		.box__image: img(src="images/"+imagen, alt="")
+		.box__content
 			h4=title
 			p=contenido
 			
