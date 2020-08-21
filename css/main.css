@@ -3,11 +3,11 @@ body {
 }
 
 .intro {
-  background-image: url("/images/image0.jpg");
+  background-image: url("https://adippsa.com/Images/foodima/image0.jpg");
   background-size: 90vw;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 80vh;
+  height: 90vh;
 }
 .intro .intro__contenido {
   margin-right: 10%;
@@ -32,6 +32,63 @@ body {
   cursor: pointer;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: 200px, repeat(3, 350px);
+  grid-template-areas: "sidebar box1 box2 box3" "sidebar box4 box5 box6";
+  grid-gap: 10px;
+}
+
+.sidebar--list {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  display: grid;
+  grid-template-areas: "h3 ." "h4 ." "p p" "sidebar1 sidebar2" "sidebar3 sidebar4";
+  grid-template-rows: repeat(3, 40px) 80px 1fr;
+  grid-template-columns: 180px 30px;
+}
+.sidebar--list h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h3;
+}
+.sidebar--list h4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: h4;
+}
+.sidebar--list p {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: p;
+}
+.sidebar--list .sidebar--filter {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: sidebar1;
+  padding-left: 0;
+}
+.sidebar--list .sidebar--filter__input {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: sidebar2;
+  padding-left: 0;
+}
+.sidebar--list .sidebar--menu {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: sidebar3;
+  padding-left: 0;
+}
+.sidebar--list .sidebar--menu__input {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: sidebar4;
+  padding-left: 0;
+}
 .sidebar--list li {
   list-style: none;
 }
@@ -40,11 +97,43 @@ body {
   color: #333333;
 }
 
-main.content {
-  grid-template: repeat(3, 300px)/repeat(3, 100%);
-}
-
 .box .box__image img {
   width: 300px;
+  height: 200px;
+}
+.image1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: box1;
+}
+
+.image2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: box2;
+}
+
+.image3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: box3;
+}
+
+.image4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: box4;
+}
+
+.image5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: box5;
+}
+
+.image6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: box6;
 }
 /*# sourceMappingURL=main.css.map */

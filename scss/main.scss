@@ -12,11 +12,11 @@ body {
 
 
 .intro {
-    background-image: url("/images/image0.jpg");
+    background-image: url("https://adippsa.com/Images/foodima/image0.jpg");
     background-size: 90vw;
     background-repeat: no-repeat;
     background-position: center top;
-    height: 80vh;
+    height: 90vh;
     .intro__contenido {
         margin-right: 10%;
         float: right;
@@ -40,20 +40,80 @@ body {
         }
     }
 }
-.sidebar--list {
-    li {
-        list-style: none;
-    }
-    a {
-        text-decoration: none;
-        color: $color-primario;
-    }
-}
-main.content {
-grid-template: repeat(3, 300px) / repeat(3, 100%);
+
+.content {
+    display: grid;
+    grid-template-columns: 200px, repeat(3,350px);
+    grid-template-areas: "sidebar box1 box2 box3"
+                        "sidebar box4 box5 box6";
+    grid-gap: 10px;
 }
 
+
+.sidebar--list {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-areas: "h3 ."
+                        "h4 ."
+                        "p p"
+                        "sidebar1 sidebar2"
+                        "sidebar3 sidebar4";
+    grid-template-rows: repeat(3,40px) 80px 1fr;
+    grid-template-columns: 180px 30px;
+    h3 {
+        grid-area: h3;
+    }
+    h4{
+        grid-area: h4;
+    }
+    p{
+        grid-area: p;
+    }
+    
+    .sidebar--filter{
+        grid-area: sidebar1;
+        padding-left: 0;
+    }
+    .sidebar--filter__input{
+        grid-area: sidebar2;
+        padding-left: 0;
+    }
+    .sidebar--menu{
+        grid-area: sidebar3;
+        padding-left: 0;
+}
+    .sidebar--menu__input{
+        grid-area: sidebar4;
+        padding-left: 0;
+    }
+        li {
+            list-style: none;
+        }
+            a {
+                text-decoration: none;
+                color: $color-primario;
+            }
+}
 .box
     {
         @include create-box;
     }
+
+.image1 {
+    grid-area: box1;
+}
+.image2 {
+    grid-area: box2;
+}
+.image3 {
+    grid-area: box3;
+}
+.image4 {
+    grid-area: box4;
+}
+.image5 {
+    grid-area: box5;
+}
+.image6 {
+    grid-area: box6;
+}

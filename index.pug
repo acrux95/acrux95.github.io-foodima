@@ -1,15 +1,26 @@
 extend componentes/plantilla.pug
 block contenidos
-        section.intro
-            .intro__contenido
-                h2 #{titles[0]}
-                p
-                    | Recipe contests are like our big 
-                    | constantly-in-progress dinner
-                    | party-and you're invited
-                    br
-                    br
-                    a  How they work →
+    section.intro
+        .intro__contenido
+            h2 #{titles[0]}
+            p
+                | Recipe contests are like our big 
+                | constantly-in-progress dinner
+                | party-and you're invited
+                br
+                br
+                a  How they work →
+
+    form.search 
+        input(type="text" placeholder="search recopes and more" class="buscador__input")
+        .button--group
+         button.btn.btn__default.btn__dropdown(data-toggle="dropdown")  Sort by
+            ul.dropdown-menu(role="menu")
+                li: a(href="") Newest
+                li: a(href="") Best values
+                li: a(href="") Favorite 
+    //- a.Boton(type="button" data-toggle="dropdown") Sort by Newest
+    section.content
         .sidebar--list
             h3 Recipes
             h4 Filter by:
@@ -28,21 +39,9 @@ block contenidos
             ul.sidebar--menu__input
                 li: a(href="") +
                 li: a(href="") +
-
-        .buscador: form: input(type="text" placeholder="search recopes and more" class="buscador__input")
-        .button--group
-         button.btn.btn__default.btn__dropdown(data-toggle="dropdown")  Sort by
-            ul.dropdown-menu(role="menu")
-                li: a(href="") Newest
-                li: a(href="") Best values
-                li: a(href="") Favorites
-
-
-        //- a.Boton(type="button" data-toggle="dropdown") Sort by Newest
-        main.content
-            +box("image1.jpg",titles[1],"Raspberry-Raspberry Shortcakes")
-            +box("image2.jpg",titles[2],"David lebovitz's Cherry Clafoutis")
-            +box("image3.jpg",titles[3],"Chicharrones-Encrusted Avocado")
-            +box("image4.jpg",titles[4],"Lorem ipsum, dolor sit amet consectetur")
-            +box("image5.jpg",titles[5],"Lorem ipsum, dolor sit amet consectetur")
-            +box("image6.jpg",titles[6],"Lorem ipsum, dolor sit amet consectetur")
+        +box("image1","image1.jpg",titles[1],"Raspberry-Raspberry Shortcakes")
+        +box("image2","image2.jpg",titles[2],"David lebovitz's Cherry Clafoutis")
+        +box("image3","image3.jpg",titles[3],"Chicharrones-Encrusted Avocado")
+        +box("image4","image4.jpg",titles[4],"Lorem ipsum, dolor sit amet consectetur")
+        +box("image5","image5.jpg",titles[5],"Lorem ipsum, dolor sit amet consectetur")
+        +box("image6","image6.jpg",titles[6],"Lorem ipsum, dolor sit amet consectetur")

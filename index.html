@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&amp;display=swap"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial|Pacifico&amp;amp;display=swap"/>
     <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -38,99 +38,97 @@
         </p>
       </div>
     </section>
-    <div class="sidebar--list">
-      <h3>Recipes</h3>
-      <h4>Filter by:</h4>
-      <p>Clear filter</p>
-      <ul class="sidebar--filter">
-        <li>
-          <label for="option1">Contest Winners </label>
-        </li>
-        <li>
-          <label for="option2">Featured </label>
-        </li>
-        <li>
-          <label for="option3">Test kitchen-Approved </label>
-        </li>
-      </ul>
-      <ul class="sidebar--filter__input">
-        <li>
-          <input type="checkbox" name="filter1"/>
-        </li>
-        <li>
-          <input type="checkbox" name="filter3"/>
-        </li>
-        <li>
-          <input type="checkbox" name="filter2"/>
-        </li>
-      </ul>
-      <ul class="sidebar--menu">
-        <li><a href="">Meal</a></li>
-        <li><a href="">Dish Type</a></li>
-      </ul>
-      <ul class="sidebar--menu__input">
-        <li><a href="">+</a></li>
-        <li><a href="">+</a></li>
-      </ul>
-    </div>
-    <div class="buscador">
-      <form>
-        <input class="buscador__input" type="text" placeholder="search recopes and more"/>
-      </form>
-    </div>
-    <div class="button--group">
-      <button class="btn btn__default btn__dropdown" data-toggle="dropdown"> Sort by
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="">Newest</a></li>
-          <li><a href="">Best values</a></li>
-          <li><a href="">Favorites</a></li>
+    <form class="search"> 
+      <input class="buscador__input" type="text" placeholder="search recopes and more"/>
+      <div class="button--group">
+        <button class="btn btn__default btn__dropdown" data-toggle="dropdown"> Sort by
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="">Newest</a></li>
+            <li><a href="">Best values</a></li>
+            <li><a href="">Favorite </a></li>
+          </ul>
+        </button>
+      </div>
+    </form>
+    <section class="content">
+      <div class="sidebar--list">
+        <h3>Recipes</h3>
+        <h4>Filter by:</h4>
+        <p>Clear filter</p>
+        <ul class="sidebar--filter">
+          <li>
+            <label for="option1">Contest Winners </label>
+          </li>
+          <li>
+            <label for="option2">Featured </label>
+          </li>
+          <li>
+            <label for="option3">Test kitchen-Approved </label>
+          </li>
         </ul>
-      </button>
-    </div>
-    <main class="content">
-      <div class="box">
-        <div class="box__image"><img src="images/image1.jpg" alt=""/></div>
+        <ul class="sidebar--filter__input">
+          <li>
+            <input type="checkbox" name="filter1"/>
+          </li>
+          <li>
+            <input type="checkbox" name="filter3"/>
+          </li>
+          <li>
+            <input type="checkbox" name="filter2"/>
+          </li>
+        </ul>
+        <ul class="sidebar--menu">
+          <li><a href="">Meal</a></li>
+          <li><a href="">Dish Type</a></li>
+        </ul>
+        <ul class="sidebar--menu__input">
+          <li><a href="">+</a></li>
+          <li><a href="">+</a></li>
+        </ul>
+      </div>
+      <div class="box image1">
+        <div class="box__image"><img src="http://adippsa.com/Images/foodima/image1.jpg" alt=""/></div>
         <div class="box__content">
           <h4>Subtitulo 1</h4>
           <p>Raspberry-Raspberry Shortcakes</p>
         </div>
       </div>
-      <div class="box">
-        <div class="box__image"><img src="images/image2.jpg" alt=""/></div>
+      <div class="box image2">
+        <div class="box__image"><img src="http://adippsa.com/Images/foodima/image2.jpg" alt=""/></div>
         <div class="box__content">
           <h4>Subtitulo 2</h4>
           <p>David lebovitz's Cherry Clafoutis</p>
         </div>
       </div>
-      <div class="box">
-        <div class="box__image"><img src="images/image3.jpg" alt=""/></div>
+      <div class="box image3">
+        <div class="box__image"><img src="http://adippsa.com/Images/foodima/image3.jpg" alt=""/></div>
         <div class="box__content">
           <h4>Subtitulo 3</h4>
           <p>Chicharrones-Encrusted Avocado</p>
         </div>
       </div>
-      <div class="box">
-        <div class="box__image"><img src="images/image4.jpg" alt=""/></div>
+      <div class="box image4">
+        <div class="box__image"><img src="http://adippsa.com/Images/foodima/image4.jpg" alt=""/></div>
         <div class="box__content">
           <h4>Subtitulo 4</h4>
           <p>Lorem ipsum, dolor sit amet consectetur</p>
         </div>
       </div>
-      <div class="box">
-        <div class="box__image"><img src="images/image5.jpg" alt=""/></div>
+      <div class="box image5">
+        <div class="box__image"><img src="http://adippsa.com/Images/foodima/image5.jpg" alt=""/></div>
         <div class="box__content">
           <h4>Subtitulo 1</h4>
           <p>Lorem ipsum, dolor sit amet consectetur</p>
         </div>
       </div>
-      <div class="box">
-        <div class="box__image"><img src="images/image6.jpg" alt=""/></div>
+      <div class="box image6">
+        <div class="box__image"><img src="http://adippsa.com/Images/foodima/image6.jpg" alt=""/></div>
         <div class="box__content">
           <h4>Subtitulo 1</h4>
           <p>Lorem ipsum, dolor sit amet consectetur</p>
         </div>
       </div>
-    </main>
+    </section>
     <div class="footer--principal">
       <div class="nav--title">
         <h1>Foodima</h1>
