@@ -7,41 +7,41 @@ block contenidos
                 | Recipe contests are like our big 
                 | constantly-in-progress dinner
                 | party-and you're invited
-                br
-                br
                 a  How they work →
 
-    form.search 
-        input(type="text" placeholder="search recopes and more" class="buscador__input")
-        .button--group
-         button.btn.btn__default.btn__dropdown(data-toggle="dropdown")  Sort by
-            ul.dropdown-menu(role="menu")
-                li: a(href="") Newest
-                li: a(href="") Best values
-                li: a(href="") Favorite 
-    //- a.Boton(type="button" data-toggle="dropdown") Sort by Newest
-    section.content
-        .sidebar--list
-            h3 Recipes
-            h4 Filter by:
-            p Clear filter
-            ul.sidebar--filter
-                li: label(for="option1") Contest Winners 
-                li: label(for="option2") Featured 
-                li: label(for="option3") Test kitchen-Approved 
-            ul.sidebar--filter__input
-                li: input(type="checkbox" name="filter1")
-                li: input(type="checkbox" name="filter3")
-                li: input(type="checkbox" name="filter2")
-            ul.sidebar--menu
-                li: a(href="") Meal
-                li: a(href="") Dish Type
-            ul.sidebar--menu__input
-                li: a(href="") +
-                li: a(href="") +
-        +box("image1","image1.jpg",titles[1],"Raspberry-Raspberry Shortcakes")
-        +box("image2","image2.jpg",titles[2],"David lebovitz's Cherry Clafoutis")
-        +box("image3","image3.jpg",titles[3],"Chicharrones-Encrusted Avocado")
-        +box("image4","image4.jpg",titles[4],"Lorem ipsum, dolor sit amet consectetur")
-        +box("image5","image5.jpg",titles[5],"Lorem ipsum, dolor sit amet consectetur")
-        +box("image6","image6.jpg",titles[6],"Lorem ipsum, dolor sit amet consectetur")
+    .content
+        form.search 
+            input(type="text" placeholder="search recopes and more" class="buscador__input")
+        .toggleButton
+            button.button-cls Newest
+            .dd-cls
+                button.button-cls-split
+                        i.fa.fa-angle-double-down
+                .dd-cont-cls
+                    a(href="#") Newest
+                    a(href="#") Best ranked
+                    a(href="#") Most poppulate
+        
+        h3.receipes Recipes
+        h4.filter Filter by:
+        p.clear Clear filter
+        ul.sidebar--filter
+            li: label(for="option1") Contest Winners 
+            li: label(for="option2") Featured 
+            li: label(for="option3") Test kitchen-Approved 
+        ul.sidebar--filter__input
+            li: input(type="checkbox" name="filter1")
+            li: input(type="checkbox" name="filter3")
+            li: input(type="checkbox" name="filter2")
+        ul.sidebar--menu
+            li: a(href="") Meal
+            li: a(href="") Dish Type
+        ul.sidebar--menu__input
+            li: a(href="") +
+            li: a(href="") +
+        +box("image1","image1.jpg",titles[1],"by SARAH JAMPBELL")
+        +box("image2","image2.jpg",titles[2],"by SARAH JAMPBELL")
+        +box("image3","image3.jpg",titles[3],"by SARAH JAMPBELL")
+        +box("image4","image4.jpg",titles[4],"by SARAH JAMPBELL")
+        +box("image5","image5.jpg",titles[5],"by SARAH JAMPBELL")
+        +box("image6","image6.jpg",titles[6],"by SARAH JAMPBELL")

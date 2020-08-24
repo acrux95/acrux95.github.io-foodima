@@ -14,9 +14,10 @@ body {
 .intro {
     background-image: url("https://adippsa.com/Images/foodima/image0.jpg");
     background-size: 90vw;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center top;
-    height: 90vh;
+    
     .intro__contenido {
         margin-right: 10%;
         float: right;
@@ -35,39 +36,102 @@ body {
             width: 400px;
         }
         a {
-           color: rgb(119, 224, 128); 
+            margin-top: 20px;
+            color: rgb(119, 224, 128); 
             cursor: pointer;
         }
     }
 }
-
 .content {
     display: grid;
-    grid-template-columns: 200px, repeat(3,350px);
-    grid-template-areas: "sidebar box1 box2 box3"
-                        "sidebar box4 box5 box6";
+    grid-template-columns: 120px 80px repeat(3,350px);
+    grid-template-areas: "receipes . input1 input1 button1"
+                        "filter clear box1 box2 box3"
+                        "sidebar1 sidebar2 box1 box2 box3"
+                        "sidebar3 sidebar4 box1 box2 box3"
+                        ". . box4 box5 box6";
     grid-gap: 10px;
-}
 
-
-.sidebar--list {
-    grid-area: sidebar;
-    display: grid;
-    grid-template-areas: "h3 ."
-                        "h4 ."
-                        "p p"
-                        "sidebar1 sidebar2"
-                        "sidebar3 sidebar4";
-    grid-template-rows: repeat(3,40px) 80px 1fr;
-    grid-template-columns: 180px 30px;
-    h3 {
-        grid-area: h3;
+    
+    .search {
+        grid-area: input1;
+        margin: 50px 0;
+        .buscador__input{
+            height: 28px;
+            width: 600px;
+            border-radius: 10px;
+            padding-left: 20px;
+        }
     }
-    h4{
-        grid-area: h4;
+    .toggleButton {
+        grid-area: button1;
+        margin: 50px 100px 0 0;
+        justify-self: end;
+        .button-cls {
+            width: 100px;
+            background-color: $color-primario;
+            color: white;
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            &-split {
+                width: 30px;
+                color: #fff;
+                border-color: $color-primario;
+                background-color: $color-primario;
+                padding: 5px 5px 6px;
+                font-size: 16px;
+                border: 1px solid $color-primario;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+        .dd-cont-cls {
+            display: none;
+            position: absolute;
+            background-color: #F9DBDE;
+            min-width: 160px;
+            z-index: 1;
+            a {
+                color: #A51D2B;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                &:hover {
+                    background-color: #A51D2B;
+                    color:#fff;
+                }
+            }
+        }
+        .dd-cls {
+            position: absolute;
+            display: inline-block;
+        }
+        .dd-cls:hover .dd-cont-cls {
+                display: block;
+            }
+        
+            .button-cls:hover, .dd-cls:hover {
+                .button-cls {
+                    background-color: #A51D2B;
+                }
+        }
     }
-    p{
-        grid-area: p;
+    
+    .receipes {
+        grid-area: receipes;
+        margin: 50px 0;
+    }
+    .filter{
+        grid-area: filter;
+        margin: 0;
+    }
+    .clear{
+        grid-area: clear;
+        margin: 0;
     }
     
     .sidebar--filter{
@@ -77,14 +141,16 @@ body {
     .sidebar--filter__input{
         grid-area: sidebar2;
         padding-left: 0;
+        justify-self: center;
     }
     .sidebar--menu{
         grid-area: sidebar3;
         padding-left: 0;
-}
+    }
     .sidebar--menu__input{
         grid-area: sidebar4;
         padding-left: 0;
+        justify-self: center;
     }
         li {
             list-style: none;
@@ -93,27 +159,28 @@ body {
                 text-decoration: none;
                 color: $color-primario;
             }
-}
-.box
-    {
-        @include create-box;
-    }
+    
+    .box
+        {
+            @include create-box;
+        }
 
-.image1 {
-    grid-area: box1;
-}
-.image2 {
-    grid-area: box2;
-}
-.image3 {
-    grid-area: box3;
-}
-.image4 {
-    grid-area: box4;
-}
-.image5 {
-    grid-area: box5;
-}
-.image6 {
-    grid-area: box6;
+    .image1 {
+        grid-area: box1;
+    }
+    .image2 {
+        grid-area: box2;
+    }
+    .image3 {
+        grid-area: box3;
+    }
+    .image4 {
+        grid-area: box4;
+    }
+    .image5 {
+        grid-area: box5;
+    }
+    .image6 {
+        grid-area: box6;
+    }
 }

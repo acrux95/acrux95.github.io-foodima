@@ -5,9 +5,9 @@ body {
 .intro {
   background-image: url("https://adippsa.com/Images/foodima/image0.jpg");
   background-size: 90vw;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 90vh;
 }
 .intro .intro__contenido {
   margin-right: 10%;
@@ -28,81 +28,137 @@ body {
   width: 400px;
 }
 .intro .intro__contenido a {
+  margin-top: 20px;
   color: #77e080;
   cursor: pointer;
 }
 
 .content {
   display: grid;
-  grid-template-columns: 200px, repeat(3, 350px);
-  grid-template-areas: "sidebar box1 box2 box3" "sidebar box4 box5 box6";
+  grid-template-columns: 120px 80px repeat(3, 350px);
+  grid-template-areas: "receipes . input1 input1 button1" "filter clear box1 box2 box3" "sidebar1 sidebar2 box1 box2 box3" "sidebar3 sidebar4 box1 box2 box3" ". . box4 box5 box6";
   grid-gap: 10px;
 }
-
-.sidebar--list {
-  grid-area: sidebar;
-  display: grid;
-  grid-template-areas: "h3 ." "h4 ." "p p" "sidebar1 sidebar2" "sidebar3 sidebar4";
-  grid-template-rows: repeat(3, 40px) 80px 1fr;
-  grid-template-columns: 180px 30px;
+.content .search {
+  grid-area: input1;
+  margin: 50px 0;
 }
-.sidebar--list h3 {
-  grid-area: h3;
+.content .search .buscador__input {
+  height: 28px;
+  width: 600px;
+  border-radius: 10px;
+  padding-left: 20px;
 }
-.sidebar--list h4 {
-  grid-area: h4;
+.content .toggleButton {
+  grid-area: button1;
+  margin: 50px 100px 0 0;
+  justify-self: end;
 }
-.sidebar--list p {
-  grid-area: p;
+.content .toggleButton .button-cls {
+  width: 100px;
+  background-color: #333333;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.sidebar--list .sidebar--filter {
+.content .toggleButton .button-cls-split {
+  width: 30px;
+  color: #fff;
+  border-color: #333333;
+  background-color: #333333;
+  padding: 5px 5px 6px;
+  font-size: 16px;
+  border: 1px solid #333333;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.content .toggleButton .dd-cont-cls {
+  display: none;
+  position: absolute;
+  background-color: #F9DBDE;
+  min-width: 160px;
+  z-index: 1;
+}
+.content .toggleButton .dd-cont-cls a {
+  color: #A51D2B;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.content .toggleButton .dd-cont-cls a:hover {
+  background-color: #A51D2B;
+  color: #fff;
+}
+.content .toggleButton .dd-cls {
+  position: absolute;
+  display: inline-block;
+}
+.content .toggleButton .dd-cls:hover .dd-cont-cls {
+  display: block;
+}
+.content .toggleButton .button-cls:hover .button-cls, .content .toggleButton .dd-cls:hover .button-cls {
+  background-color: #A51D2B;
+}
+.content .receipes {
+  grid-area: receipes;
+  margin: 50px 0;
+}
+.content .filter {
+  grid-area: filter;
+  margin: 0;
+}
+.content .clear {
+  grid-area: clear;
+  margin: 0;
+}
+.content .sidebar--filter {
   grid-area: sidebar1;
   padding-left: 0;
 }
-.sidebar--list .sidebar--filter__input {
+.content .sidebar--filter__input {
   grid-area: sidebar2;
   padding-left: 0;
+  justify-self: center;
 }
-.sidebar--list .sidebar--menu {
+.content .sidebar--menu {
   grid-area: sidebar3;
   padding-left: 0;
 }
-.sidebar--list .sidebar--menu__input {
+.content .sidebar--menu__input {
   grid-area: sidebar4;
   padding-left: 0;
+  justify-self: center;
 }
-.sidebar--list li {
+.content li {
   list-style: none;
 }
-.sidebar--list a {
+.content a {
   text-decoration: none;
   color: #333333;
 }
-
-.box .box__image img {
+.content .box .box__image img {
   width: 300px;
   height: 200px;
 }
-.image1 {
+.content .image1 {
   grid-area: box1;
 }
-
-.image2 {
+.content .image2 {
   grid-area: box2;
 }
-
-.image3 {
+.content .image3 {
   grid-area: box3;
 }
-
-.image4 {
+.content .image4 {
   grid-area: box4;
 }
-
-.image5 {
+.content .image5 {
   grid-area: box5;
 }
-
-.image6 {
+.content .image6 {
   grid-area: box6;
 }

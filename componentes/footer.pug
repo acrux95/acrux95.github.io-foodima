@@ -1,12 +1,11 @@
 .footer--principal
-    .nav--title: h1 Foodima
-   
-    nav.nav--footer: ul
-        each option in options
-            li=option
-        .nav--social: ul
-        li Follow us
-        li: a(href="#"): i.fab.fa-instagram
-        li: a(href="#"): i.fab.fa-pinterest
-        li: a(href="#"): i.fab.fa-twitter
-        li: a(href="#"): i.fab.fa-facebook-f
+        .nav--title: h1 Foodima
+        ul.footerMenu
+            each option in options
+                li=option
+        ul.nav--social
+            li Follow us:
+            li: a(href="#"): i.fab.fa-instagram
+            li: a(href="#"): i.fab.fa-pinterest
+            li: a(href="#"): i.fab.fa-twitter
+            li: a(href="#"): i.fab.fa-facebook-f
