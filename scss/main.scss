@@ -1,11 +1,6 @@
+@import "components/variables";
 @import "components/mixins";
 
-//variables
-$Fuente1: 'Lato', sans-serif;
-$Fuente2: 'Oswald', sans-serif;
-$Fuente3: 'Questrial',Arial;
-$color-primario: #333333;
-$color-secundario: white;
 body {
     font-family: $Fuente1;
 }
@@ -13,8 +8,8 @@ body {
 
 .intro {
     background-image: url("https://adippsa.com/Images/foodima/image0.jpg");
-    background-size: 90vw;
-    height: 100%;
+    background-size: $backgroundWidth;
+    height: $backgroundHeigth;
     background-repeat: no-repeat;
     background-position: center top;
     
@@ -37,20 +32,22 @@ body {
         }
         a {
             margin-top: 20px;
+            font-size: 40px;
             color: rgb(119, 224, 128); 
             cursor: pointer;
         }
     }
 }
 .content {
+    max-width: $totalWidth;
     display: grid;
-    grid-template-columns: 120px 80px repeat(3,350px);
+    grid-template-columns: $grid1 $grid2 repeat(3, $grid3);
     grid-template-areas: "receipes . input1 input1 button1"
                         "filter clear box1 box2 box3"
                         "sidebar1 sidebar2 box1 box2 box3"
                         "sidebar3 sidebar4 box1 box2 box3"
                         ". . box4 box5 box6";
-    grid-gap: 10px;
+    grid-gap: 5px;
 
     
     .search {
@@ -58,7 +55,7 @@ body {
         margin: 50px 0;
         .buscador__input{
             height: 28px;
-            width: 600px;
+            width: $search;
             border-radius: 10px;
             padding-left: 20px;
         }
@@ -163,6 +160,10 @@ body {
     .box
         {
             @include create-box;
+            .box__content p {
+                font-size: 15px;
+                color: grey;
+            }
         }
 
     .image1 {
