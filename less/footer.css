@@ -1,0 +1,41 @@
+.footer--principal {
+  margin: 80px 0 20px;
+  height: 90px;
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+}
+.footer--principal .nav--title {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+}
+.footer--principal .nav--title h1 {
+  margin-left: 40px;
+  font-family: "Questrial", Arial;
+  font-size: 40px;
+  color: #333333;
+  font-weight: bold;
+}
+.footer--principal .footerMenu {
+  grid-column: 2/3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.footer--principal .footerMenu li {
+  padding: 0 10px;
+  margin: 5px;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.footer--principal .footerMenu li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #333333;
+}
+.footer--principal .nav--social {
+  grid-column: 3/4;
+  justify-self: end;
+}
