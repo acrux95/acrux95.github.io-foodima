@@ -1,8 +1,9 @@
 @mixin create-box {
     
     .box__image img{
-        width: 23vw;
-        height: 16vw;
+        width: 22vw;
+        height: 14vw;
+        border-radius: 20px;
     
     }
 }

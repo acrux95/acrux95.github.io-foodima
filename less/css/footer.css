@@ -3,7 +3,7 @@
   margin: 80px 0 20px;
   height: 90px;
   display: grid;
-  grid-template-columns: 20% 40% 40%;
+  grid-template-columns: 20% 30% 50%;
 }
 .footer--principal .nav--title {
   grid-column: 1/2;

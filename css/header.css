@@ -1,9 +1,10 @@
 .header--main {
-  max-width: 100vw;
+  max-width: 90vw;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
-  margin-bottom: 40px;
+  grid-template-columns: 30% 45% 25%;
+  margin: 40px 5% 40px;
   height: 90px;
+  justify-self: center;
 }
 .header--main .nav--title {
   grid-column: 1/2;
@@ -11,7 +12,7 @@
   align-items: center;
 }
 .header--main .nav--title h1 {
-  margin-left: 30px;
+  margin-left: 0;
   font-family: 'Questrial', Arial;
   font-size: 45px;
   color: #333;
@@ -42,21 +43,25 @@
   font-size: 15px;
   color: #333;
 }
+.header--main .nav--header ul li a:hover {
+  font-weight: 800;
+}
 .header--main .nav--log--bar {
   grid-column: 3/4;
-  margin: 20px;
+  margin: 20px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 }
 .header--main .nav--log--bar .log--bar__number {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   background-color: #333;
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  font-size: 14px;
+  align-items: center;
+  font-size: 18px;
   text-decoration: none;
   color: #fff;
 }
@@ -64,12 +69,17 @@
   text-decoration: none;
   font-size: 15px;
   color: #333;
+  margin-left: 30px;
+}
+.header--main .nav--log--bar .log--bar__login:hover {
+  font-weight: 800;
 }
 .header--main .nav--log--bar button {
   height: 35px;
   width: 100px;
   border-radius: 20px;
   background-color: #333;
+  margin-left: 30px;
 }
 .header--main .nav--log--bar button a {
   text-decoration: none;

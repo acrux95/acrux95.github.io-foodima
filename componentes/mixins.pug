@@ -3,10 +3,12 @@ mixin category-list(number,title)
 		span.sidebar--list__number=number
 		span.sidebar--list__title=title
 
-mixin box(className,image,title,content)
+mixin box(className,image,title,rate,content)
 	.box(class=className)
 		.box__image: img(src="http://adippsa.com/Images/foodima/"+image, alt="")
 		.box__content
 			h4=title
-			p=content
+			.credits
+				p.rate=rate
+				p.rateContent=content
 			

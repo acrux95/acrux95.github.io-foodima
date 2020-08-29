@@ -41,12 +41,12 @@ body {
 .content {
     max-width: $totalWidth;
     display: grid;
-    grid-template-columns: $grid1 $grid2 repeat(3, $grid3);
-    grid-template-areas: "receipes . input1 input1 button1"
-                        "filter clear box1 box2 box3"
-                        "sidebar1 sidebar2 box1 box2 box3"
-                        "sidebar3 sidebar4 box1 box2 box3"
-                        ". . box4 box5 box6";
+    grid-template-columns: 4% $grid1 $grid2 repeat(3, $grid3);
+    grid-template-areas: ". receipes . input1 input1 button1"
+                        ". filter clear box1 box2 box3"
+                        ". sidebar1 sidebar2 box1 box2 box3"
+                        ". sidebar3 sidebar4 box1 box2 box3"
+                        ". . . box4 box5 box6";
     grid-gap: 5px;
 
     
@@ -54,36 +54,46 @@ body {
         grid-area: input1;
         margin: 50px 0;
         .buscador__input{
-            height: 28px;
+            height: 48px;
             width: $search;
+            margin-left: 25px;
             border-radius: 10px;
             padding-left: 20px;
+            background-color: rgb(236, 231, 231);
+            font-family: $Fuente1;
+            color: lightgray;
+            border: none;
         }
     }
     .toggleButton {
         grid-area: button1;
-        margin: 50px 100px 0 0;
+        margin: 50px 50px 0 0;
         justify-self: end;
+        
         .button-cls {
-            width: 100px;
+            width: 120px;
+            height: 35px;
             background-color: $color-primario;
             color: white;
-            padding: 5px;
-            font-size: 16px;
+            padding: 5px 5px 6px;
+            font-size: 13px;
+            letter-spacing: 1px;
             border: none;
             outline: none;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            justify-self: center;
             &-split {
                 width: 30px;
+                height: 35px;
                 color: #fff;
                 border-color: $color-primario;
                 background-color: $color-primario;
                 padding: 5px 5px 6px;
                 font-size: 16px;
                 border: 1px solid $color-primario;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
             }
         }
         .dd-cont-cls {
@@ -120,34 +130,50 @@ body {
     
     .receipes {
         grid-area: receipes;
-        margin: 50px 0;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
     }
     .filter{
         grid-area: filter;
         margin: 0;
+        align-self: center;
     }
     .clear{
         grid-area: clear;
         margin: 0;
+        font-size: 10px;
+        color: rgb(240, 113, 54);
+        justify-self: center;
+        align-self: center;
     }
     
     .sidebar--filter{
         grid-area: sidebar1;
         padding-left: 0;
+        align-self: flex-start;
+        line-height: 40px;
+        font-size: 12px;
+        margin: 0;
     }
     .sidebar--filter__input{
         grid-area: sidebar2;
         padding-left: 0;
         justify-self: center;
+        line-height: 40px;
+        margin: 0;
     }
+
     .sidebar--menu{
         grid-area: sidebar3;
         padding-left: 0;
+        line-height: 40px;
     }
     .sidebar--menu__input{
         grid-area: sidebar4;
         padding-left: 0;
         justify-self: center;
+        line-height: 40px;
     }
         li {
             list-style: none;
@@ -157,14 +183,29 @@ body {
                 color: $color-primario;
             }
     
-    .box
-        {
-            @include create-box;
-            .box__content p {
-                font-size: 15px;
-                color: grey;
+    .box {
+        justify-self: self-end;
+        margin-bottom: 70px;
+        @include create-box;
+        .box__content p {
+            font-size: 10px;
+            color: grey;
+            margin-right: 0;
+        }
+        .credits {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 0;
+            .rate {
+                font-size: 14px;
+                color: rgb(51, 58, 66);
+            }
+            .rateContent {
             }
         }
+            
+    }
 
     .image1 {
         grid-area: box1;
